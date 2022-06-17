@@ -531,6 +531,6 @@ app.post("/searchdriver", async (req, res) => {
   }
 });
 
-app.listen(443, () => {
+app.listen(80, () => {
   console.log("API server is ON !");
 });
