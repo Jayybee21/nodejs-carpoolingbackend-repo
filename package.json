@@ -2,7 +2,7 @@
   "name": "first-node-app",
   "version": "1.0.0",
   "description": "Test project",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "start": "node App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
