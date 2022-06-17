@@ -11,6 +11,9 @@ const cors = require("cors");
 //using mongoose to connect to our database !
 const mongoose = require("mongoose");
 
+//setting up default port of server
+const port = process.env.PORT || '5000';
+
 //getting the models (basically beans)
 const UserModel = require("./Models/Users");
 const LimniStats = require("./Models/Stats");
@@ -531,6 +534,6 @@ app.post("/searchdriver", async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("API server is ON !");
 });
