@@ -13,7 +13,6 @@ const mongoose = require("mongoose");
 
 //setting up default port of server
 const port = process.env.PORT || '3000';
-const hostname = '0.0.0.0';
 
 //getting the models (basically beans)
 const UserModel = require("./Models/Users");
@@ -535,6 +534,6 @@ app.post("/searchdriver", async (req, res) => {
   }
 });
 
-app.listen(port,hostname, () => {
+app.listen(port, () => {
   console.log("API server is ON !");
 });
